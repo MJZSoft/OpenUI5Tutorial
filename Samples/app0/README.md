@@ -2,4 +2,4 @@
 # Please clone it directly from that repository for the latest changes. 
 
 
-[Sample Output](./Output.JPG)
+![Sample Output](./Output.JPG)
