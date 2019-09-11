@@ -1,3 +1,7 @@
+# This is a cloned application from https://github.com/SAP/ui5-tooling#installing-the-ui5-cli
+# Please clone it directly from that repository for the latest changes. 
+
+
 [![Build Status](https://travis-ci.org/SAP/openui5-basic-template-app.svg?branch=master)](https://travis-ci.org/SAP/openui5-basic-template-app)
 ![OpenUI5 logo](http://openui5.org/images/OpenUI5_new_big_side.png)
 
