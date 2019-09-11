@@ -1,3 +1,3 @@
 # The gool is to show you how to bootstraping the UI5 library from a local resource.  
 
-[Sample Output](./Output.JPG)
+![Sample Output](./Output.JPG)
