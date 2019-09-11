@@ -1,4 +1,3 @@
-# The gool is to show you how to bootstraping the UI5 library from its original CDN.  
-
+# The gool is to show you how does the bootstraping works.    
 
 ![Sample Output](./Output.JPG)

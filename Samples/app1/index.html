@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>I Love UI5</title>
-	<script id="sap-ui-bootstrap"
-		src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
-		data-sap-ui-theme="sap_belize"
-		data-sap-ui-libs="sap.m, sap.ui.layout, sap.tnt"
-		data-sap-ui-resourceroots='{"com.mjzsoft": "./"}'
-		data-sap-ui-async="true">
-	</script>
-	<script>
-		sap.ui.getCore().attachInit(function () {
-			sap.ui.require([
-				"sap/ui/core/mvc/XMLView"
-			], function (XMLView) {
-				XMLView.create({viewName: "com.mjzsoft.App"}).then(function (oView) {
-					oView.placeAt("content");
-				});
-			});
-		});
-	</script>
-</head>
-<body class="sapUiBody" id="content"></body>
+	<head>
+		<meta charset="utf-8">
+		<title>More Bootstarpping</title>
+	
+		<script
+			id="sap-ui-bootstrap"
+			src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+			data-sap-ui-theme="sap_belize"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-async="true"
+			data-sap-ui-resourceroots='{
+				"com.mjzsoft.demo.ui5": "./"
+			}'
+			data-sap-ui-oninit="module:com/mjzsoft/demo/ui5/index">
+		</script>
+	
+	</head>
+	<body>
+		<div>Hello UI5 World</div>
+		<div id='alert'>Please wait!</div>
+	</body>
 </html>

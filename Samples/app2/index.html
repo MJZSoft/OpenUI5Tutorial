@@ -1,42 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>I Love UI5</title>
-	<script id="sap-ui-bootstrap"
-		src="../openui5/openui5-runtime-1.70.0/resources/sap-ui-core.js"
-		data-sap-ui-theme="sap_belize"
-		data-sap-ui-libs="sap.m, sap.ui.layout, sap.tnt"
-		data-sap-ui-resourceroots='{"com.mjzsoft": "./"}'
-		data-sap-ui-async="true">
-	</script>
-	<!-- <script id="sap-ui-bootstrap"
-		src="../openui5/openui5-runtime-1.70.0/resources/sap-ui-core.js"
-		data-sap-ui-theme="sap_belize"
-		data-sap-ui-libs="sap.m, sap.ui.layout, sap.tnt"
-		data-sap-ui-resourceroots='{"com.mjzsoft": "./"}'
-		data-sap-ui-async="true">
-	</script> -->
-	<!-- <script id="sap-ui-bootstrap"
-		src="../openui5/openui5-runtime-1.70.0/resources/sap-ui-core.js"
-		data-sap-ui-theme="sap_belize"
-		data-sap-ui-libs="sap.m, sap.ui.layout, sap.tnt"
-		data-sap-ui-resourceroots='{"com.mjzsoft": "./"}'
-		data-sap-ui-async="true">
-	</script> -->
-	<script>
-		sap.ui.getCore().attachInit(function () {
-			sap.ui.require([
-				"sap/ui/core/mvc/XMLView"
-			], function (XMLView) {
-				XMLView.create({
-					viewName: "com.mjzsoft.App"
-				}).then(function (oView) {
-					oView.placeAt("content");
+	<head>
+		<meta charset="utf-8">
+		<title>I Love UI5</title>
+		<script id="sap-ui-bootstrap"
+			src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+			data-sap-ui-theme="sap_belize"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-resourceroots='{"com.mjzsoft": "./"}'
+			data-sap-ui-async="true">
+		</script>
+		<script>
+			sap.ui.getCore().attachInit(function () {
+				sap.ui.require([
+					"sap/ui/core/mvc/XMLView"
+				], function (XMLView) {
+					XMLView.create({viewName: "com.mjzsoft.App"}).then(function (oView) {
+						oView.placeAt("content");
+					});
 				});
 			});
-		});
-	</script>
-</head>
-<body class="sapUiBody" id="content"></body>
+		</script>
+	</head>
+	<body class="sapUiBody" id="content">	
+	</body>
 </html>
