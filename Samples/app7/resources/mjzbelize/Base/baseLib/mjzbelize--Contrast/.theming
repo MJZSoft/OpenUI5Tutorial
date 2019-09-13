@@ -1,0 +1,78 @@
+{
+	"mVersionDependency": {
+		"Base.baseLib.sap_belize_plus": "11.1.11",
+		"Base.baseLib": "11.1.11",
+		"Base": "11.1.11"
+	},
+	"sEntity": "Theme",
+	"sId": "mjzbelize--Contrast",
+	"oExtends": "Base.baseLib.sap_belize_plus",
+	"aFiles": [
+		"base",
+		"preview",
+		"css_variables",
+		"custom"
+	],
+	"aBundled": [
+		"mjzbelize"
+	],
+	"sBuildOptions": "SKIP",
+	"sType": "ABSTRACT",
+	"sThemability": "PRIVATE",
+	"mData": {
+		"mThemeMasterState": {
+			"mSourceInfo": {
+				"sCreated": "2019-09-13T07:07:35.824Z",
+				"sLastModified": "2019-09-13T10:24:15.084Z",
+				"aVersionHistory": [
+					{
+						"sDate": "2019-09-13T10:16:15.121Z",
+						"mVersion": {
+							"Base": "11.1.11",
+							"UR": "10.30.7.316257.0",
+							"UI5": "1.70.0"
+						}
+					},
+					{
+						"sDate": "2019-09-13T10:16:14.961Z",
+						"mVersion": {
+							"Base": "11.1.11",
+							"UI5": "1.70.0"
+						}
+					},
+					{
+						"sDate": "2019-09-13T10:10:34.715Z",
+						"mVersion": {
+							"Base": "11.1.11",
+							"UR": "10.30.7.316257.0",
+							"UI5": "1.70.0"
+						}
+					},
+					{
+						"sDate": "2019-09-13T10:10:07.589Z",
+						"mVersion": {
+							"Base": "11.1.11",
+							"UI5": "1.70.0"
+						}
+					},
+					{
+						"sDate": "2019-09-13T10:05:52.214Z",
+						"mVersion": {
+							"Base": "11.1.11",
+							"UR": "10.30.7.316257.0",
+							"UI5": "1.70.0"
+						}
+					},
+					{
+						"sDate": "2019-09-13T07:07:35.824Z",
+						"mVersion": {
+							"Base": "11.1.11",
+							"UI5": "1.70.0"
+						}
+					}
+				]
+			}
+		}
+	},
+	"sReleaseStage": "GENERAL_AVAILABILITY"
+}

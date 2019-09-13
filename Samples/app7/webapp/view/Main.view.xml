@@ -1,0 +1,31 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.mjzsoft.demo.ui5.app7.controller.Main" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+					    <sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" editable="true" layout="ResponsiveGridLayout" id="form0">
+					        <sap.ui.layout.form:content>
+					            <sap.ui.core:Title text="{i18n>formTitle}" id="title0"/>
+						            <Label text="{i18n>nameInputBox}" id="label0"/>
+							            <Input width="100%" id="inputFirstName"/>
+							            <Input width="100%" id="inputLastName"/>
+						            <Label text="{i18n>addressInputBox}" id="label1"/>
+						            	<Input width="100%" id="inputAddress"/>
+					        </sap.ui.layout.form:content>
+					    </sap.ui.layout.form:SimpleForm>
+					</content>
+				<footer>
+				    <Toolbar class="sapContrast sapContrastPlus" width="100%" id="toolbarFooter">
+				        <content>
+				            <ToolbarSpacer id="spacer0"/>
+				            <Button xmlns="sap.m" text="{i18n>acceptButton}" id="buttonAccept" type="Accept" press="fnAcceptButton"/>
+				            <Button xmlns="sap.m" text="{i18n>rejectButton}" id="buttonReject" type="Reject" press="fnRejectButton"/>
+				        </content>
+				    </Toolbar>
+				</footer>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

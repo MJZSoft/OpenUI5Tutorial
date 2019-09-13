@@ -1,0 +1,18 @@
+{
+	"mVersionDependency": {
+		"UI5.sap/ui/table.sap_belize_plus": "1.70.0",
+		"UI5.sap/ui/table": "1.70.0",
+		"UI5": "1.70.0"
+	},
+	"sEntity": "Theme",
+	"sId": "mjzbelize--Contrast",
+	"sVendor": "mjzsoft.com",
+	"oExtends": "UI5.sap/ui/table.sap_belize_plus",
+	"aBundled": [
+		"mjzbelize"
+	],
+	"sBuildOptions": "SKIP",
+	"sType": "ABSTRACT",
+	"sThemability": "PRIVATE",
+	"sReleaseStage": "GENERAL_AVAILABILITY"
+}

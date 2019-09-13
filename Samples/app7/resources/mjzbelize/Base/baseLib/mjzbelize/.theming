@@ -1,0 +1,70 @@
+{
+	"mVersionDependency": {
+		"Base.baseLib.sap_belize": "11.1.11",
+		"Base.baseLib": "11.1.11",
+		"Base": "11.1.11"
+	},
+	"sEntity": "Theme",
+	"sId": "mjzbelize",
+	"sLabel": "MJZ Belize",
+	"sVendor": "mjzsoft.com",
+	"oExtends": "Base.baseLib.sap_belize",
+	"aFiles": [
+		"base",
+		"preview",
+		"css_variables",
+		"custom"
+	],
+	"aBundled": [
+		"mjzbelize--Contrast"
+	],
+	"sTextDirections": "LTR",
+	"sType": "STANDARD",
+	"sThemability": "PUBLIC",
+	"mCssScopes": {
+		"css_variables": {
+			"sEmbeddingMethod": "APPEND",
+			"aScopes": [
+				{
+					"sLabel": "Contrast",
+					"sSelector": "sapContrast",
+					"sThemeIdSuffix": "Contrast",
+					"sThemability": "PUBLIC",
+					"aThemabilityFilter": [
+						"Color"
+					],
+					"sEmbeddedFile": "mjzbelize--Contrast.css_variables",
+					"sEmbeddedCompareFile": "css_variables"
+				}
+			],
+			"sBaseFile": "css_variables"
+		}
+	},
+	"mData": {
+		"mThemeMasterState": {
+			"mSourceInfo": {
+				"sCreated": "2019-09-13T07:07:35.822Z",
+				"sLastModified": "2019-09-13T10:24:15.084Z",
+				"aVersionHistory": [
+					{
+						"sDate": "2019-09-13T07:07:35.822Z",
+						"mVersion": {
+							"Base": "11.1.11",
+							"UR": "10.30.7.316257.0",
+							"UI5": "1.70.0"
+						}
+					}
+				]
+			},
+			"mBuildInfo": {
+				"sLastBuilt": "2019-09-13T10:24:26.234Z",
+				"mVersion": {
+					"Base": "11.1.11",
+					"UR": "10.30.7.316257.0",
+					"UI5": "1.70.0"
+				}
+			}
+		}
+	},
+	"sReleaseStage": "GENERAL_AVAILABILITY"
+}
