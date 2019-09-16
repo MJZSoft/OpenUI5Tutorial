@@ -3,7 +3,7 @@ sap.ui.define(["sap/ui/core/mvc/Controller"], function (Controller) {
 	return Controller.extend("com.mjzsoft.demo.ui5.app8.controller.Main", {
 		onInit: function () {
 			this.getView().setModel( new sap.ui.model.json.JSONModel({
-				iconColor: "sap.ui.core.IconColor.Default" //#fff" 
+				iconColor: sap.ui.core.IconColor.Default //#fff" 
 			}), "viewModel");
 		},
 		/**
@@ -20,7 +20,7 @@ sap.ui.define(["sap/ui/core/mvc/Controller"], function (Controller) {
 				}
 				if(iValue === 0){
 					oIconTabBar.setVisible(false);
-					oViewModel.setProperty("/iconColor", "sap.ui.core.IconColor.Default");
+					oViewModel.setProperty("/iconColor", "");
 				} else{
 					oIconTabBar.setVisible(true);
 				}

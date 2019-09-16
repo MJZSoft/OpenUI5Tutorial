@@ -1,0 +1,71 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.mjzsoft.demo.ui5.app9.controller.Main" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<IconTabBar selectedKey="{viewModel>/iconTabSelectedKey}" id="bar0" visible="{viewModel>/iconTabVisibility}">
+							<items>
+								<IconTabFilter text="Orders" count="22" id="filter0" icon="sap-icon://product" key="0" visible="{viewModel>/filtersVisibility/0}">
+									<content>
+										<List noDataText="No data" id="list0">
+											<items>
+												<StandardListItem title="List Item 1" id="item0"/>
+												<StandardListItem title="List Item 2" id="item1"/>
+												<StandardListItem title="List Item 3" id="item2"/>
+											</items>
+										</List>
+									</content>
+								</IconTabFilter>
+								<IconTabFilter text="Open" count="10" icon="sap-icon://task" iconColor="Critical" id="filter1" key="1" visible="{viewModel>/filtersVisibility/1}">
+									<content>
+										<Panel xmlns="sap.m" width="auto" expandable="true" expanded="true" id="panel0">
+											<headerToolbar>
+												<Toolbar id="toolbar1">
+													<Title text="In progress"/>
+													<ToolbarSpacer/>
+													<Button icon="sap-icon://settings"/>
+												</Toolbar>
+											</headerToolbar>
+											<content>
+												<Text text="Panel Content" id="text0"/>
+											</content>
+										</Panel>
+									</content>
+								</IconTabFilter>
+								<IconTabFilter text="Shipped" count="5" icon="sap-icon://shipping-status" iconColor="Positive" id="filter2" key="2" visible="{viewModel>/filtersVisibility/2}">
+									<content>
+										<Panel xmlns="sap.m" width="auto" expandable="true" expanded="true" id="panel0_1568379244886">
+											<headerToolbar>
+												<Toolbar id="toolbar1_1568379244886">
+													<Title text="In the way"/>
+													<ToolbarSpacer/>
+													<Button icon="sap-icon://settings"/>
+												</Toolbar>
+											</headerToolbar>
+											<content>
+												<Text text="Panel Content" id="text0_1568379244885"/>
+											</content>
+										</Panel>
+									</content>
+								</IconTabFilter>
+							</items>
+						</IconTabBar>
+						<HBox width="100%" id="hbox0" justifyContent="SpaceAround">
+						    <items>
+						        <sap.ui.core:Icon src="sap-icon://sap-ui5" size="10em" xmlns:sap.ui.core="sap.ui.core" id="icon0" color="{viewModel>/iconColor}"/>
+						    </items>
+						</HBox>
+						
+					</content>
+				<footer>
+				    <Toolbar class="sapContrast sapContrastPlus" width="100%" id="toolbar1_1568379470967">
+				        <content><Slider xmlns="sap.m" value="1" id="slider0" max="3" liveChange="onSliderLiveChange"/>
+				        </content>
+				    </Toolbar>
+				</footer>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
