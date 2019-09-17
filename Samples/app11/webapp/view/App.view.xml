@@ -1,0 +1,14 @@
+<mvc:View
+	controllerName="com.mjzsoft.demo.ui5.app11.controller.App"
+	displayBlock="true"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<!--CSS display should be set to "block" As this view is a container for other views-->
+	<Shell>
+		<!-- id of this controll is used inside the manifest to know where to load the other views -->
+		<App
+			id="app"
+			busy="{appView>/busy}"
+			busyIndicatorDelay="{appView>/delay}"/>
+	</Shell>
+</mvc:View>
