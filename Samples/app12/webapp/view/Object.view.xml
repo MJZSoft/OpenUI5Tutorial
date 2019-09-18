@@ -1,0 +1,81 @@
+<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.f.semantic" xmlns:form="sap.ui.layout.form" controllerName="com.mjzsoft.demo.ui5.app12.controller.Object">
+	<semantic:SemanticPage id="page" headerPinnable="false" toggleHeaderOnTitleClick="false" busy="{objectView>/busy}" busyIndicatorDelay="{objectView>/delay}" showFooter="true">
+		<semantic:titleHeading>
+			<Title text="{ProductName}" level="H2"/>
+		</semantic:titleHeading>
+		<semantic:headerContent>
+			<ObjectNumber number="{ProductID}"/>
+		</semantic:headerContent>
+		<semantic:sendEmailAction>
+			<semantic:SendEmailAction id="shareEmail" press=".onShareEmailPress"/>
+		</semantic:sendEmailAction>
+		<semantic:content>
+			<form:Form editable="true" id="form0">
+				<form:formContainers>
+					<form:FormContainer title="{i18n>formTitle}" id="container0">
+						<form:formElements>
+							<form:FormElement id="element0" label="{i18n>productID}">
+								<form:fields>
+									<Input width="100%" id="input0" value="{ProductID}" enabled="false" change="onInputChange" fieldGroupIds="productField"/>
+								</form:fields>
+							</form:FormElement>
+							<form:FormElement id="element1" label="{i18n>productName}">
+								<form:fields>
+									<Input width="100%" id="input1" value="{ProductName}" enabled="{objectView>/formEditable}" change="onInputChange" fieldGroupIds="productField"/>
+								</form:fields>
+							</form:FormElement>
+							<form:FormElement id="element2" label="{i18n>supplierID}">
+								<form:fields>
+									<Input width="100%" id="input2" value="{SupplierID}" enabled="{objectView>/formEditable}" change="onInputChange" fieldGroupIds="productField"/>
+								</form:fields>
+							</form:FormElement>
+							<form:FormElement id="element3" label="{i18n>categoryID}">
+								<form:fields>
+									<Input width="100%" id="input3" value="{CategoryID}" enabled="{objectView>/formEditable}" change="onInputChange" fieldGroupIds="productField"/>
+								</form:fields>
+							</form:FormElement>
+							<form:FormElement id="element4" label="{i18n>quantityPerUnit}">
+								<form:fields>
+									<Input width="100%" id="input4" value="{QuantityPerUnit}" enabled="{objectView>/formEditable}" change="onInputChange" fieldGroupIds="productField"/>
+								</form:fields>
+							</form:FormElement>
+							<form:FormElement id="element5" label="{i18n>unitPrice}">
+								<form:fields>
+									<Input width="100%" id="input5" value="{ path: 'UnitPrice', formatter:'.formatter.numberUnit'}" enabled="{objectView>/formEditable}" change="onInputChange" fieldGroupIds="productField"/>
+								</form:fields>
+							</form:FormElement>
+							<form:FormElement id="element6" label="{i18n>unitsInStock}">
+								<form:fields>
+									<Input width="100%" id="input6" value="{UnitsInStock}" enabled="{objectView>/formEditable}" change="onInputChange" fieldGroupIds="productField"/>
+								</form:fields>
+							</form:FormElement>
+							<form:FormElement id="element7" label="{i18n>unitsOnOrder}">
+								<form:fields>
+									<Input width="100%" id="input7" value="{UnitsOnOrder}" enabled="{objectView>/formEditable}" change="onInputChange" fieldGroupIds="productField"/>
+								</form:fields>
+							</form:FormElement>
+							<form:FormElement id="element8" label="{i18n>reorderLevel}">
+								<form:fields>
+									<Input width="100%" id="input8" value="{ReorderLevel}" enabled="{objectView>/formEditable}" change="onInputChange" fieldGroupIds="productField"/>
+								</form:fields>
+							</form:FormElement>
+							<form:FormElement id="element9" label="{i18n>discontinued}">
+								<form:fields>
+									<CheckBox xmlns="sap.m" selected="{Discontinued}" id="box0" enabled="{objectView>/formEditable}" select="onInputChange" fieldGroupIds="productField"/>
+								</form:fields>
+							</form:FormElement>
+						</form:formElements>
+					</form:FormContainer>
+				</form:formContainers>
+				<form:layout>
+					<form:ResponsiveGridLayout id="layout0"/>
+				</form:layout>
+			</form:Form>
+		</semantic:content>
+		<!-- https://openui5.hana.ondemand.com/#/api/sap.f.semantic.SemanticPage -->
+		<semantic:footerCustomActions>
+			<Button icon="sap-icon://edit" id="buttonEdit" press="onEditButtonPressed"/>
+			<Button xmlns="sap.m" id="buttonSave" icon="sap-icon://save" visible="{objectView>/saveButtonVisible}" press="onSaveButtonPress"/>
+		</semantic:footerCustomActions>
+	</semantic:SemanticPage>
+</mvc:View>

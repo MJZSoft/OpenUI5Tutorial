@@ -1,0 +1,49 @@
+<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.f.semantic"
+	controllerName="com.mjzsoft.demo.ui5.app12.controller.Worklist">
+	<semantic:SemanticPage id="page" headerPinnable="false" toggleHeaderOnTitleClick="false" class="sapUiNoContentPadding">
+		<semantic:titleHeading>
+			<Title text="{i18n>worklistTitle}" level="H2"/>
+		</semantic:titleHeading>
+		<semantic:content>
+			<Table id="table" width="auto"
+				items="{ path: '/Products', sorter: { path: 'ProductName', descending: true, group: true }, 
+				filters: [{path: 'ProductName', operator: 'StartsWith', value1: 'C'}, {path: 'UnitPrice', operator: 'LT', value1: 50}] }"
+				noDataText="{worklistView>/tableNoDataText}" busyIndicatorDelay="{worklistView>/tableBusyDelay}" growing="true" growingScrollToLoad="true"
+				updateFinished=".onUpdateFinished" growingThreshold="30">
+				<headerToolbar>
+					<OverflowToolbar>
+						<Title id="tableHeader" text="{worklistView>/worklistTableTitle}" level="H3"/>
+						<ToolbarSpacer/>
+						<SearchField id="searchField" tooltip="{i18n>worklistSearchTooltip}" search=".onSearch">
+							<layoutData>
+								<OverflowToolbarLayoutData maxWidth="200px" priority="NeverOverflow"/>
+							</layoutData>
+						</SearchField>
+					</OverflowToolbar>
+				</headerToolbar>
+				<columns>
+					<Column id="nameColumn">
+						<Text text="{i18n>tableNameColumnTitle}" id="nameColumnTitle"/>
+					</Column>
+					<Column id="unitPriceColumn" hAlign="End">
+						<Text text="{i18n>tableUnitPriceColumnTitle}" id="unitPriceColumnTitle"/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem type="Navigation" press=".onPress">
+						<cells>
+							<ObjectIdentifier title="{ProductName}"/>
+							<!--Step one-->
+							<!--<ObjectIdentifier title="{ path: 'UnitPrice', formatter: '.formatter.numberUnit'}"/>-->
+							<!--Step two-->
+							<ObjectIdentifier title="{ path: 'UnitPrice', formatter: '.formatter.numberPrice'}"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</semantic:content>
+		<semantic:sendEmailAction>
+			<semantic:SendEmailAction id="shareEmail" press=".onShareEmailPress"/>
+		</semantic:sendEmailAction>
+	</semantic:SemanticPage>
+</mvc:View>
