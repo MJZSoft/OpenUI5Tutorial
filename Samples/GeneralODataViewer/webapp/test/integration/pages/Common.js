@@ -3,7 +3,7 @@ sap.ui.define([
 ], function(Opa5) {
 	"use strict";
 
-	return Opa5.extend("com.mjzsoft.sapui5.demo.GeneralODataViewer.test.integration.pages.Common", {
+	return Opa5.extend("com.mjzsoft.demo.ui5.GeneralODataViewer.test.integration.pages.Common", {
 
 		createAWaitForAnEntitySet : function  (oOptions) {
 			return {
@@ -30,7 +30,7 @@ sap.ui.define([
 
 		getMockServer : function () {
 			return new Promise(function (success) {
-				Opa5.getWindow().sap.ui.require(["com/mjzsoft/sapui5/demo/GeneralODataViewer/localService/mockserver"], function (mockserver) {
+				Opa5.getWindow().sap.ui.require(["com/mjzsoft/demo/ui5/GeneralODataViewer/localService/mockserver"], function (mockserver) {
 					success(mockserver.getMockServer());
 				});
 			});

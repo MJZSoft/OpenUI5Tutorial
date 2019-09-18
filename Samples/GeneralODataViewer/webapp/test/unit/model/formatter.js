@@ -2,7 +2,7 @@
 
 sap.ui.define([
 	"sap/m/Text",
-	"com/mjzsoft/sapui5/demo/GeneralODataViewer/model/formatter"
+	"com/mjzsoft/demo/ui5/GeneralODataViewer/model/formatter"
 ], function (Text, formatter) {
 	"use strict";
 

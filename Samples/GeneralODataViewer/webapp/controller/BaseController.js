@@ -5,7 +5,7 @@ sap.ui.define([
 	], function (Controller, History) {
 		"use strict";
 
-		return Controller.extend("com.mjzsoft.sapui5.demo.GeneralODataViewer.controller.BaseController", {
+		return Controller.extend("com.mjzsoft.demo.ui5.GeneralODataViewer.controller.BaseController", {
 			/**
 			 * Convenience method for accessing the router in every controller of the application.
 			 * @public

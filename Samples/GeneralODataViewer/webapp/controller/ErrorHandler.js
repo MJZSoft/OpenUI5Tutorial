@@ -4,14 +4,14 @@ sap.ui.define([
 	], function (UI5Object, MessageBox) {
 		"use strict";
 
-		return UI5Object.extend("com.mjzsoft.sapui5.demo.GeneralODataViewer.controller.ErrorHandler", {
+		return UI5Object.extend("com.mjzsoft.demo.ui5.GeneralODataViewer.controller.ErrorHandler", {
 
 			/**
 			 * Handles application errors by automatically attaching to the model events and displaying errors when needed.
 			 * @class
 			 * @param {sap.ui.core.UIComponent} oComponent reference to the app's component
 			 * @public
-			 * @alias com.mjzsoft.sapui5.demo.GeneralODataViewer.controller.ErrorHandler
+			 * @alias com.mjzsoft.demo.ui5.GeneralODataViewer.controller.ErrorHandler
 			 */
 			constructor : function (oComponent) {
 				this._oResourceBundle = oComponent.getModel("i18n").getResourceBundle();

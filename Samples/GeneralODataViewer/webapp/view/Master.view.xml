@@ -1,16 +1,11 @@
-<mvc:View controllerName="com.mjzsoft.sapui5.demo.GeneralODataViewer.controller.Master" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
-	xmlns:semantic="sap.f.semantic">
-	<semantic:SemanticPage id="masterPage" preserveHeaderStateOnScroll="true" toggleHeaderOnTitleClick="false">
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:semantic="sap.f.semantic" controllerName="com.mjzsoft.demo.ui5.GeneralODataViewer.controller.Master">
+	<semantic:SemanticPage id="masterPage" preserveHeaderStateOnScroll="true" toggleHeaderOnTitleClick="false" class="sapUiNoContentPadding">
 		<semantic:titleHeading>
 			<Title id="masterPageTitle" text="{masterView>/title}"/>
 		</semantic:titleHeading>
 		<semantic:content>
 			<!-- For client side filtering add this to the items attribute: parameters: {operationMode: 'Client'}}" -->
-			<List id="list" width="auto" class="sapFDynamicPageAlignContent"
-				items="{ path: 'DataModel>/DataSet', sorter: { path: 'SetName', descending: false }, groupHeaderFactory: '.createGroupHeader' }"
-				busyIndicatorDelay="{masterView>/delay}" noDataText="{masterView>/noDataText}"
-				mode="{= ${device>/system/phone} ? 'None' : 'SingleSelectMaster'}" growing="true" growingScrollToLoad="true"
-				updateFinished="onUpdateFinished" selectionChange="onSelectionChange">
+			<List id="list" width="auto" class="sapFDynamicPageAlignContent" items="{ path: 'DataModel>/DataSet', sorter: { path: 'SetName', descending: false }, groupHeaderFactory: '.createGroupHeader' }" busyIndicatorDelay="{masterView>/delay}" noDataText="{masterView>/noDataText}" mode="{= ${device>/system/phone} ? 'None' : 'SingleSelectMaster'}" growing="true" growingScrollToLoad="true" updateFinished="onUpdateFinished" selectionChange="onSelectionChange">
 				<infoToolbar>
 					<Toolbar active="true" id="filterBar" visible="{masterView>/isFilterBarVisible}" press="onOpenViewSettings">
 						<Title id="filterBarLabel" text="{masterView>/filterBarLabel}"/>
@@ -27,10 +22,18 @@
 						<Button id="sortButton" press="onOpenViewSettings" icon="sap-icon://sort" type="Transparent"/>
 						<Button id="filterButton" press="onOpenViewSettings" icon="sap-icon://filter" type="Transparent"/>
 						<Button id="groupButton" press="onOpenViewSettings" icon="sap-icon://group-2" type="Transparent"/>
+						<Button id="downloadButton" press="onDownload" icon="sap-icon://download" type="Transparent"/>
 					</OverflowToolbar>
 				</headerToolbar>
 				<items>
-					<ObjectListItem type="Navigation" press="onSelectionChange" title="{DataModel>SetName}"></ObjectListItem>
+					<CustomListItem type="Navigation" press="onSelectionChange">
+						<HBox>
+							<CheckBox name="{DataModel>SetName}" select="onCheckBoxSelect"/>
+							<VBox alignItems="End" alignContent="End" justifyContent="SpaceAround" width="100%">
+								<Label text="{DataModel>SetName}"/>
+							</VBox>
+						</HBox>
+					</CustomListItem>
 				</items>
 			</List>
 		</semantic:content>

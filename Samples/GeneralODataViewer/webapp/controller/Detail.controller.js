@@ -1,12 +1,12 @@
 /*global location */
 sap.ui.define([
-	"com/mjzsoft/sapui5/demo/GeneralODataViewer/controller/BaseController",
+	"com/mjzsoft/demo/ui5/GeneralODataViewer/controller/BaseController",
 	"sap/ui/model/json/JSONModel",
-	"com/mjzsoft/sapui5/demo/GeneralODataViewer/model/formatter"
+	"com/mjzsoft/demo/ui5/GeneralODataViewer/model/formatter"
 ], function (BaseController, JSONModel, formatter) {
 	"use strict";
 
-	return BaseController.extend("com.mjzsoft.sapui5.demo.GeneralODataViewer.controller.Detail", {
+	return BaseController.extend("com.mjzsoft.demo.ui5.GeneralODataViewer.controller.Detail", {
 
 		formatter: formatter,
 

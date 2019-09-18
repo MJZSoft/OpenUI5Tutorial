@@ -2,13 +2,13 @@
 sap.ui.define([
 		"sap/ui/core/UIComponent",
 		"sap/ui/Device",
-		"com/mjzsoft/sapui5/demo/GeneralODataViewer/model/models",
-		"com/mjzsoft/sapui5/demo/GeneralODataViewer/controller/ListSelector",
-		"com/mjzsoft/sapui5/demo/GeneralODataViewer/controller/ErrorHandler"
+		"com/mjzsoft/demo/ui5/GeneralODataViewer/model/models",
+		"com/mjzsoft/demo/ui5/GeneralODataViewer/controller/ListSelector",
+		"com/mjzsoft/demo/ui5/GeneralODataViewer/controller/ErrorHandler"
 	], function (UIComponent, Device, models, ListSelector, ErrorHandler) {
 		"use strict";
 
-		return UIComponent.extend("com.mjzsoft.sapui5.demo.GeneralODataViewer.Component", {
+		return UIComponent.extend("com.mjzsoft.demo.ui5.GeneralODataViewer.Component", {
 
 			metadata : {
 				manifest : "json"

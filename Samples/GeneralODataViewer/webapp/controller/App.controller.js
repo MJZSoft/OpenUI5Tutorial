@@ -1,10 +1,10 @@
 sap.ui.define([
-		"com/mjzsoft/sapui5/demo/GeneralODataViewer/controller/BaseController",
+		"com/mjzsoft/demo/ui5/GeneralODataViewer/controller/BaseController",
 		"sap/ui/model/json/JSONModel"
 	], function (BaseController, JSONModel) {
 		"use strict";
 
-		return BaseController.extend("com.mjzsoft.sapui5.demo.GeneralODataViewer.controller.App", {
+		return BaseController.extend("com.mjzsoft.demo.ui5.GeneralODataViewer.controller.App", {
 
 			onInit : function () {
 				var oViewModel,

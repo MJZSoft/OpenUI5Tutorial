@@ -4,7 +4,7 @@ sap.ui.define([
 	"use strict";
 
 	function getFrameUrl (sHash, sUrlParameters) {
-		var sUrl = jQuery.sap.getResourcePath("com/mjzsoft/sapui5/demo/GeneralODataViewer/test/flpSandboxMockServer.html");
+		var sUrl = jQuery.sap.getResourcePath("com/mjzsoft/demo/ui5/GeneralODataViewer/test/flpSandboxMockServer.html");
 		sHash = sHash || "";
 		sUrlParameters = sUrlParameters ? "?" + sUrlParameters : "";
 
@@ -17,7 +17,7 @@ sap.ui.define([
 			return sUrl + sUrlParameters + sHash;
 	}
 
-	return Opa5.extend("com.mjzsoft.sapui5.demo.GeneralODataViewer.test.integration.arrangements.Arrangement", {
+	return Opa5.extend("com.mjzsoft.demo.ui5.GeneralODataViewer.test.integration.arrangements.Arrangement", {
 
 		iStartTheApp : function (oOptions) {
 			oOptions = oOptions || {};

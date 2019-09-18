@@ -1,7 +1,7 @@
 /*global QUnit*/
 
 sap.ui.define([
-	"com/mjzsoft/sapui5/demo/GeneralODataViewer/model/models",
+	"com/mjzsoft/demo/ui5/GeneralODataViewer/model/models",
 	"sap/ui/thirdparty/sinon",
 	"sap/ui/thirdparty/sinon-qunit"
 ], function (models) {

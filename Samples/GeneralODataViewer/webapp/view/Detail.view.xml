@@ -1,7 +1,7 @@
-<mvc:View controllerName="com.mjzsoft.sapui5.demo.GeneralODataViewer.controller.Detail" xmlns:m="sap.m" xmlns:mvc="sap.ui.core.mvc"
+<mvc:View controllerName="com.mjzsoft.demo.ui5.GeneralODataViewer.controller.Detail" xmlns:m="sap.m" xmlns:mvc="sap.ui.core.mvc"
 	xmlns:semantic="sap.f.semantic" xmlns:footerbar="sap.ushell.ui.footerbar" xmlns:smartTable="sap.ui.comp.smarttable" xmlns:core="sap.ui.core"
 	xmlns:l="sap.ui.layout">
-	<semantic:SemanticPage id="detailPage" busy="{detailView>/busy}" busyIndicatorDelay="{detailView>/delay}">
+	<semantic:SemanticPage id="detailPage" busy="{detailView>/busy}" busyIndicatorDelay="{detailView>/delay}" class="sapUiNoContentPadding">
 		<semantic:titleHeading>
 			<m:Title text="{detailView>/SetName}"/>
 		</semantic:titleHeading>

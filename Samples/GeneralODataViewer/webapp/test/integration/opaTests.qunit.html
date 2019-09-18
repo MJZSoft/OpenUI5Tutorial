@@ -8,7 +8,7 @@
 		<script id="sap-ui-bootstrap"
 				src="../../resources/sap-ui-core.js"
 				data-sap-ui-resourceroots='{
-					"com.mjzsoft.sapui5.demo.GeneralODataViewer": "../../"
+					"com.mjzsoft.demo.ui5.GeneralODataViewer": "../../"
 				}'
 				data-sap-ui-preload="async">
 		</script>
@@ -25,7 +25,7 @@
 
 			sap.ui.getCore().attachInit(function() {
 				sap.ui.require([
-					"com/mjzsoft/sapui5/demo/GeneralODataViewer/test/integration/AllJourneys"
+					"com/mjzsoft/demo/ui5/GeneralODataViewer/test/integration/AllJourneys"
 				], function() {
 					QUnit.start();
 				});

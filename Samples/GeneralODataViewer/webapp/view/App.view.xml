@@ -1,5 +1,5 @@
 <mvc:View
-	controllerName="com.mjzsoft.sapui5.demo.GeneralODataViewer.controller.App"
+	controllerName="com.mjzsoft.demo.ui5.GeneralODataViewer.controller.App"
 	xmlns:mvc="sap.ui.core.mvc"
 	displayBlock="true"
 	xmlns="sap.f"

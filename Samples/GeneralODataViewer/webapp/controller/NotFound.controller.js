@@ -1,9 +1,9 @@
 sap.ui.define([
-	"com/mjzsoft/sapui5/demo/GeneralODataViewer/controller/BaseController"
+	"com/mjzsoft/demo/ui5/GeneralODataViewer/controller/BaseController"
 	], function (BaseController) {
 		"use strict";
 
-		return BaseController.extend("com.mjzsoft.sapui5.demo.GeneralODataViewer.controller.NotFound", {
+		return BaseController.extend("com.mjzsoft.demo.ui5.GeneralODataViewer.controller.NotFound", {
 
 			onInit: function () {
 				this.getRouter().getTarget("notFound").attachDisplay(this._onNotFoundDisplayed, this);

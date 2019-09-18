@@ -9,7 +9,7 @@
 			src="../../resources/sap-ui-core.js"
 			data-sap-ui-libs="sap.m"
 			data-sap-ui-resourceroots='{
-				"com/mjzsoft/sapui5/demo/GeneralODataViewer": "../../"
+				"com/mjzsoft/demo/ui5/GeneralODataViewer": "../../"
 			}'
 			data-sap-ui-preload="async">
 		</script>
@@ -27,7 +27,7 @@
 
 			sap.ui.getCore().attachInit(function () {
 				sap.ui.require([
-					"com/mjzsoft/sapui5/demo/GeneralODataViewer/test/unit/allTests"
+					"com/mjzsoft/demo/ui5/GeneralODataViewer/test/unit/allTests"
 				], function() {
 					QUnit.start();
 				});

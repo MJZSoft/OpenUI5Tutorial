@@ -3,14 +3,14 @@ sap.ui.define([
 ], function (BaseObject) {
 	"use strict";
 
-	return BaseObject.extend("com.mjzsoft.sapui5.demo.GeneralODataViewer.controller.ListSelector", {
+	return BaseObject.extend("com.mjzsoft.demo.ui5.GeneralODataViewer.controller.ListSelector", {
 
 		/**
 		 * Provides a convenience API for selecting list items. All the functions will wait until the initial load of the a List passed to the instance by the setBoundMasterList
 		 * function.
 		 * @class
 		 * @public
-		 * @alias com.mjzsoft.sapui5.demo.GeneralODataViewer.controller.ListSelector
+		 * @alias com.mjzsoft.demo.ui5.GeneralODataViewer.controller.ListSelector
 		 */
 
 		constructor : function () {

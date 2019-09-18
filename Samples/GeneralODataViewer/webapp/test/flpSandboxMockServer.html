@@ -36,7 +36,7 @@
 				},
 				applications: {
 					"GeneralODataViewer-display": {
-						additionalInformation: "SAPUI5.Component=com.mjzsoft.sapui5.demo.GeneralODataViewer",
+						additionalInformation: "SAPUI5.Component=com.mjzsoft.demo.ui5.GeneralODataViewer",
 						applicationType: "URL",
 						url: "../",
 						title: "General OData Viewer"
@@ -54,7 +54,7 @@
 				data-sap-ui-theme="sap_belize"
 				data-sap-ui-preload="async"
 				data-sap-ui-compatVersion="edge"
-				data-sap-ui-resourceroots='{"com.mjzsoft.sapui5.demo.GeneralODataViewer": "../"}'
+				data-sap-ui-resourceroots='{"com.mjzsoft.demo.ui5.GeneralODataViewer": "../"}'
 				data-sap-ui-frameOptions='allow'> // NON-SECURE setting for testing environment
 		</script>
 
@@ -62,7 +62,7 @@
 			sap.ui.getCore().attachInit(function() {
 
 				sap.ui.require([
-					"com/mjzsoft/sapui5/demo/GeneralODataViewer/localService/mockserver"
+					"com/mjzsoft/demo/ui5/GeneralODataViewer/localService/mockserver"
 				], function (mockserver) {
 					// set up test service for local testing
 					mockserver.init();

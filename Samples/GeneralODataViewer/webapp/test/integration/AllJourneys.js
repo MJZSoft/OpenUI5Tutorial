@@ -15,7 +15,7 @@ sap.ui.define([
 	"use strict";
 	Opa5.extendConfig({
 		arrangements: new Arrangement(),
-		viewNamespace: "com.mjzsoft.sapui5.demo.GeneralODataViewer.view.",
+		viewNamespace: "com.mjzsoft.demo.ui5.GeneralODataViewer.view.",
 		autoWait: true
 	});
 });

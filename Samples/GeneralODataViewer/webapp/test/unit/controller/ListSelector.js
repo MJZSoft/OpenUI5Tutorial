@@ -2,7 +2,7 @@
 /*eslint-env browser*/
 
 sap.ui.define([
-	"com/mjzsoft/sapui5/demo/GeneralODataViewer/controller/ListSelector",
+	"com/mjzsoft/demo/ui5/GeneralODataViewer/controller/ListSelector",
 	"sap/ui/thirdparty/sinon",
 	"sap/ui/thirdparty/sinon-qunit"
 ], function(ListSelector) {

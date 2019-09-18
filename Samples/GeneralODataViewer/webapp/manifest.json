@@ -1,7 +1,7 @@
 {
 	"_version": "1.9.0",
 	"sap.app": {
-		"id": "com.mjzsoft.sapui5.demo.GeneralODataViewer",
+		"id": "com.mjzsoft.demo.ui5.GeneralODataViewer",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
 		"title": "{{appTitle}}",
@@ -42,7 +42,7 @@
 	},
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "com.mjzsoft.sapui5.demo.GeneralODataViewer.view.App",
+			"viewName": "com.mjzsoft.demo.ui5.GeneralODataViewer.view.App",
 			"type": "XML",
 			"async": true,
 			"id": "app"
@@ -67,7 +67,7 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "com.mjzsoft.sapui5.demo.GeneralODataViewer.i18n.i18n"
+					"bundleName": "com.mjzsoft.demo.ui5.GeneralODataViewer.i18n.i18n"
 				}
 			},
 			"": {
@@ -79,7 +79,7 @@
 			"config": {
 				"routerClass": "sap.f.routing.Router",
 				"viewType": "XML",
-				"viewPath": "com.mjzsoft.sapui5.demo.GeneralODataViewer.view",
+				"viewPath": "com.mjzsoft.demo.ui5.GeneralODataViewer.view",
 				"controlId": "layout",
 				"controlAggregation": "beginColumnPages",
 				"bypassed": {
